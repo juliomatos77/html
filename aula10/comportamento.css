@@ -1,0 +1,135 @@
+/* ===== Página ===== */
+header {
+    background-color: #930500;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+header p {
+    color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8e7;
+  color: #3b2a1a;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1, h2 {
+  color: #6f4e37;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: #ffffff;
+  border: 2px solid #95bbea;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.25s ease,             /* TRANSITION */
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.card h4 {
+  margin: 0 0 4px;
+  color: #8B4513;
+  font-size: 1.15em;
+  transition: color 0.25s ease;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: #8B4513;
+}
+
+.preco {
+  font-weight: bold;
+  color: #8B4513;
+  margin-right: 12px;
+}
+
+.card:hover {                                   /* HOVER */
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(111, 78, 55, 0.2);
+  border-color: #247be6;
+}
+
+.card:hover h4 {                                /* HOVER no pai muda o filho */
+  color: #930500;
+}
+
+/* ===== Botões ===== */
+.botao {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6f4e37;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;                              /* CURSOR */
+  transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.botao:hover {
+  background-color: #95bbea;
+  transform: translateY(-2px);
+}
+
+.botao:focus-visible {                          /* FOCO pelo teclado */
+  outline: 3px solid #95bbea;
+  outline-offset: 3px;
+}
+
+.botao:disabled {
+  background-color: #b9aea4;
+  cursor: not-allowed;                          /* CURSOR de bloqueado */
+  transform: none;
+}
+
+/* ===== Formulário ===== */
+.contato {
+  margin-top: 40px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.campo {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0 12px;
+  padding: 12px 14px;
+  border: 2px solid #d4a373;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo:focus {                                  /* FOCUS */
+  outline: none;
+  border-color: #c4262e;
+  box-shadow: 0 0 0 4px rgba(196, 38, 46, 0.18);
+}
+nav {
+    padding: 10px;
+    text-align: center;
+ } 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    margin: 0 10px;
+}
